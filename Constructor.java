@@ -21,9 +21,9 @@ public class Constructor {
         this.c=s;}
         public static void main(String[] args){
             Constructor obj1=new Constructor();
-             System.out.println("inside object1"+ "a:"+ obj1.a + "b"+ obj1.b);
+             System.out.println("inside object1"+ "a: "+ obj1.a + "b "+ obj1.b);
              Constructor obj2=new Constructor(10);
-            System.out.println("inside object2"+ "a:"+ obj2.a + "b"+ obj2.b);
+            System.out.println("inside object2"+ "a: "+ obj2.a + "b "+ obj2.b);
         }
       }
 
