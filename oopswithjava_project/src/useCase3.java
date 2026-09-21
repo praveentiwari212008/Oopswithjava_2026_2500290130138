@@ -14,11 +14,13 @@ public class useCase3 {
 }
 interface  Rentable {
     static final double TAX_RATE = 0.05;
-   public double calculateRent(int days);
+     
+ public double calculateRent(int days);
 
     }
 class Car implements Rentable{
  static int totalVehiclesRented=0;
+ 
      public double calculateRent(int days){
         totalVehiclesRented++;
  return 1500*days;
