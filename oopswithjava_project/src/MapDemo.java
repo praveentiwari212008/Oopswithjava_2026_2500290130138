@@ -12,5 +12,15 @@ public class MapDemo {
         for (Map.Entry<Integer, Integer> i : hm.entrySet()) {
              System.out.println(i.getKey()+ ":"+ i.getValue());
         }
+        if(hm.containsKey(9)){
+            System.out.println(hm.get(9));
+        }else{
+            System.out.println("Details not found");
+        }
+        hm.put(11,76);
+        hm.remove(10);
+         for (Map.Entry<Integer, Integer> i : hm.entrySet()) {
+             System.out.println(i.getKey()+ ":"+ i.getValue());
+        }
     }
 }
