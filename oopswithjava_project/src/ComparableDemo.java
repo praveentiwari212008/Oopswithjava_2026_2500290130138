@@ -22,7 +22,15 @@ class Student implements Comparable<Student>{
         return rollno + " " + name + " " + marks;
     }
 }
-
+class CustomComparator implements Comparator<Student>{
+    @Override 
+    public int compare(Student o1,Student o2){
+        if(o1.marks!=o2.marks){
+            return o2.marks-o1.marks;
+        }
+        return o1.rollno-o2.rollno;
+    }
+}
 public class ComparableDemo {
     public static void main(String[] args) {
         ArrayList<Integer> i  = new ArrayList<>();
@@ -46,6 +54,8 @@ public class ComparableDemo {
         st.add(new Student("prabhat", 4, 80));
 
         st.sort(null);
+        System.out.println(st);
+        st.sort(new CustomComparator());//comparator
         System.out.println(st);
     }
 }
