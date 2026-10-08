@@ -1,7 +1,7 @@
  import java.util.*;
 
 class Product {
-    int productId;
+    int productId;          //
     String productName;
     int productprice;
     Product(int id ,String name,int p){
@@ -29,10 +29,10 @@ class Product {
  public class SortingTwo {
     public static void main(String[] args){
         ArrayList< Product> st  = new ArrayList<>();
-         st.add(new Product(1,"praveen",15));
-         st.add(new Product(2,"Rahul",16));
-         st.add(new Product(3,"jay",17));
-         st.add(new Product(4,"abhi",15));
+         st.add(new Product(1,"Laptop ",60000));
+         st.add(new Product(2,"Mobile",16000));
+         st.add(new Product(3,"Tablet",45000));
+         st.add(new Product(4," Mouse",400));
          st.sort(new  CustomProductComparator());
         for(Product p : st) {
     System.out.println(p);
