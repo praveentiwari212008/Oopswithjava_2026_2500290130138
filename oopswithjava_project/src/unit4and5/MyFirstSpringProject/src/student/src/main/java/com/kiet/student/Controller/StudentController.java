@@ -43,7 +43,7 @@ public class StudentController {
     public String deleteUser(@PathVariable Long id) {
         return "Deleted :" + id;
     }
-
+    @GetMapping("/search")
     public List<Student> searchStudents(@RequestParam String branch, @RequestParam int year) {
         List<Student> result = new ArrayList<>();
         for (Student s : users) {
